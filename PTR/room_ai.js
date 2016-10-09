@@ -1,7 +1,7 @@
 class RoomAI {
     constructor(room){
-        let activeSources = this.indexSources(room);
-        let activeStructures = this.indexStructures(room, [STRUCTURE_SPAWN, STRUCTURE_EXTENSION, STRUCTURE_TOWER])
+        this.activeSources = this.indexSources(room);
+        this.activeStructures = this.indexStructures(room, [STRUCTURE_SPAWN, STRUCTURE_EXTENSION, STRUCTURE_TOWER])
     }
     indexStructures(room, typesArray) {
         return room.find(FIND_STRUCTURES, { filter: (structure) => typesArray.find((element) => element == structure.structureType) });
