@@ -16,16 +16,6 @@
 //         return sum + current;
 //     }, 0);
 // }
-//
-// alert( sumArgs(1, 2, 3) ); // 6, аргументы переданы через запятую, без массива
-
-let options = {
-    title: "Меню",
-    width: 100,
-    height: 200
-};
-
-let {title, ...size} = options;
-
-console.log(title);
-console.log(size);
+let Core = require('core');
+nxCore = new Core;
+nxCore.listAll();
