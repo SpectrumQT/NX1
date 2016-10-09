@@ -17,5 +17,5 @@
 //     }, 0);
 // }
 let Core = require('core');
-nxCore = new Core;
-nxCore.listAll();
+let nxCore = new Core;
+//nxCore.listAll();
