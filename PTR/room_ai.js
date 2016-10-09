@@ -14,3 +14,4 @@ class RoomAI {
         console.log(this.activeStructures);
     }
 }
+module.exports = RoomAI;

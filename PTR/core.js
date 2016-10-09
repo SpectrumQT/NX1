@@ -9,3 +9,4 @@ class Core {
         console.log(Game.rooms);
     }
 }
+module.exports = Core;
